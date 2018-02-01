@@ -837,3 +837,6 @@ enabled: true
 search:
   path: search.xml
   field: post
+
+
+post_asset_folder: true

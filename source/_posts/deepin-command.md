@@ -110,13 +110,13 @@ dselect安装更新
 
 在深度终端界面，输入` deepin-`，按下键盘上`Tab`键，自动显示深度应用系列的列表，部分应用可以直接在终端输入进行启动。
 
-![deepin-](../../public/images/pics/deepin6.png)
+![deepin-](../images/1.png)
 
 > 说明：在中文环境需要查看应用的英文界面时，可直接在终端中输入命令：` LANGUAGE="en_US" deepin-appstore `
 
 在深度终端界面，输入 `dde-`，按下键盘上`Tab`键，自动显示桌面环境的列表。
 
-![dde-](../../public/images/pics/deepin7.png)
+![dde-](../images/2.png)
 
 > 说明：在中文环境需要查看控制中心的英文界面时（如果不能生效，请先执行killall dde-control-center），再可直接在终端中输入命令：` export LANGUAGE="en_US";dde-control-center --show `
 
@@ -124,7 +124,7 @@ dselect安装更新
 
 在深度终端界面，输入` deepin-appname -h` 将显示该应用的命令帮助。
 
-![dde-](../../public/images/pics/deepin5.png)
+![dde-](../images/3.png)
 
 > 注意：部分深度系列软件不支持-h帮助命令。
 
@@ -132,13 +132,13 @@ dselect安装更新
 
 在深度终端界面，您可以直接通过命令匹配并安装应用（含apk/wine/webapps），只需要输入安装命令后再输入deepin./deepin-/dde-/apps.，按下键盘上`Tab`键，自动显示列表。
 
-![deepin-](../../public/images/pics/deepin1.png)
+![deepin-](../images/4.png)
 
-![dde-](../../public/images/pics/deepin2.png)
+![dde-](../images/5.png)
 
-![deepin.com](../../public/images/pics/deepin3.png)
+![deepin.com](../images/6.png)
 
-![apps.](../../public/images/pics/deepin4.png)
+![apps.](../images/7.png)
 
 ### 关机和重启
 

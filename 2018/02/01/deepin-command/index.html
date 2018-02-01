@@ -93,19 +93,19 @@
 <meta property="og:site_name" content="Gargamel&#39;s House">
 <meta property="og:description" content="主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。 基本命令您可以通过以下命令来查看系统的信息，其他系统相关命令操作可自行搜索查询。 查看系统版本cat /etc/deepin-version  查看内核版本uname -a  查看软件源信息cat /etc/apt/sources.list     查看命令帮助man chmod 或 chmod --">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin6.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin7.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin5.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin1.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin2.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin3.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin4.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/1.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/2.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/3.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/4.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/5.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/6.png">
+<meta property="og:image" content="http://ijingle.cc/2018/02/01/images/7.png">
 <meta property="og:image" content="https://github.com/haloislet/linux-command/raw/master/mac-screenshot.png">
-<meta property="og:updated_time" content="2018-02-01T09:16:06.671Z">
+<meta property="og:updated_time" content="2018-02-01T09:38:55.642Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="deepin-command">
 <meta name="twitter:description" content="主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。 基本命令您可以通过以下命令来查看系统的信息，其他系统相关命令操作可自行搜索查询。 查看系统版本cat /etc/deepin-version  查看内核版本uname -a  查看软件源信息cat /etc/apt/sources.list     查看命令帮助man chmod 或 chmod --">
-<meta name="twitter:image" content="http://ijingle.cc/2018/02/public/images/pics/deepin6.png">
+<meta name="twitter:image" content="http://ijingle.cc/2018/02/01/images/1.png">
 
 
 
@@ -422,25 +422,25 @@
 <p>卸载deb包同时也删除配置文件，部分存在depends关系，需要使用<code>sudo apt-get remove</code>来解决。<br><code>sudo dpkg -P</code></p>
 <h2 id="Deepin命令"><a href="#Deepin命令" class="headerlink" title="Deepin命令"></a>Deepin命令</h2><p>您可以通过Deepin自定义命令来进行相关操作。</p>
 <h3 id="启动应用命令"><a href="#启动应用命令" class="headerlink" title="启动应用命令"></a>启动应用命令</h3><p>在深度终端界面，输入<code>deepin-</code>，按下键盘上<code>Tab</code>键，自动显示深度应用系列的列表，部分应用可以直接在终端输入进行启动。</p>
-<p><img src="../../public/images/pics/deepin6.png" alt="deepin-"></p>
+<p><img src="../images/1.png" alt="deepin-"></p>
 <blockquote>
 <p>说明：在中文环境需要查看应用的英文界面时，可直接在终端中输入命令：<code>LANGUAGE=&quot;en_US&quot; deepin-appstore</code></p>
 </blockquote>
 <p>在深度终端界面，输入 <code>dde-</code>，按下键盘上<code>Tab</code>键，自动显示桌面环境的列表。</p>
-<p><img src="../../public/images/pics/deepin7.png" alt="dde-"></p>
+<p><img src="../images/2.png" alt="dde-"></p>
 <blockquote>
 <p>说明：在中文环境需要查看控制中心的英文界面时（如果不能生效，请先执行killall dde-control-center），再可直接在终端中输入命令：<code>export LANGUAGE=&quot;en_US&quot;;dde-control-center --show</code></p>
 </blockquote>
 <h3 id="应用帮助信息"><a href="#应用帮助信息" class="headerlink" title="应用帮助信息"></a>应用帮助信息</h3><p>在深度终端界面，输入<code>deepin-appname -h</code> 将显示该应用的命令帮助。</p>
-<p><img src="../../public/images/pics/deepin5.png" alt="dde-"></p>
+<p><img src="../images/3.png" alt="dde-"></p>
 <blockquote>
 <p>注意：部分深度系列软件不支持-h帮助命令。</p>
 </blockquote>
 <h3 id="安装deepin应用"><a href="#安装deepin应用" class="headerlink" title="安装deepin应用"></a>安装deepin应用</h3><p>在深度终端界面，您可以直接通过命令匹配并安装应用（含apk/wine/webapps），只需要输入安装命令后再输入deepin./deepin-/dde-/apps.，按下键盘上<code>Tab</code>键，自动显示列表。</p>
-<p><img src="../../public/images/pics/deepin1.png" alt="deepin-"></p>
-<p><img src="../../public/images/pics/deepin2.png" alt="dde-"></p>
-<p><img src="../../public/images/pics/deepin3.png" alt="deepin.com"></p>
-<p><img src="../../public/images/pics/deepin4.png" alt="apps."></p>
+<p><img src="../images/4.png" alt="deepin-"></p>
+<p><img src="../images/5.png" alt="dde-"></p>
+<p><img src="../images/6.png" alt="deepin.com"></p>
+<p><img src="../images/7.png" alt="apps."></p>
 <h3 id="关机和重启"><a href="#关机和重启" class="headerlink" title="关机和重启"></a>关机和重启</h3><ul>
 <li>在深度终端界面，还可以直接输入 <code>sudo init 0</code>进行关机。</li>
 <li>在深度终端界面，还可以直接输入<code>sudo reboot</code>进行重启。</li>

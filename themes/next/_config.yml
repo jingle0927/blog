@@ -95,8 +95,10 @@ menu:
   home: / || apple
   about: /about/ || linux
   categories: /categories/ || android
-  tags: /tags/ || bug
-  #archives: /archives/ || archive
+  tags: /tags/ || firefox
+   - deepin
+   - linux
+  archives: /archives/ || chrome
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   commonweal: /404.html || heartbeat
@@ -108,9 +110,9 @@ menu_icons:
   home: apple
   about: linux
   categories: android
-  tags: bug
+  tags: firefox
   #schedule: 
-  #archives: 
+  archives: chrome
   #sitemap: 
   commonweal: heartbeat
 
@@ -120,8 +122,8 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -136,7 +138,7 @@ scheme: Mist
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 
 social: 
-  GitHub: https://github.com/jingle0927/ || github
+  #GitHub: https://github.com/jingle0927/ || github
   邮箱: mailto:mrchiang1015@gmail.com || at
   微博: https://weibo.com/u/2173986831 || weibo
   知乎: https://www.zhihu.com/people/wenchaing || quora
@@ -149,7 +151,7 @@ social_icons:
   icons_only: false
   transition: false
 
-  GitHub: github
+  #GitHub: github
   邮箱: at
   微博: weibo
   知乎: quora
@@ -169,7 +171,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.gif
+avatar: https://avatars3.githubusercontent.com/u/26103116?s=460&v=4
 
 # Table Of Contents in the Sidebar
 toc:
@@ -245,8 +247,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   totalcount: false
   separated_meta: true
 

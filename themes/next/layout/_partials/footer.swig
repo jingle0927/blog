@@ -47,3 +47,10 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">小屋统计共{{ totalcount(site) }}字</span>
+</div>
+

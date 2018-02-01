@@ -22,8 +22,8 @@
 </div>
 
 {% if theme.footer.powered %}
-<!--  <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
+<div class="powered-by">{#
+  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://www.deepin.org">deepin</a>') }}{#
 #}</div>
 {% endif %}
 
@@ -38,7 +38,7 @@
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
--->
+
 
 {% endif %}
 
@@ -47,10 +47,3 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
-
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">小屋统计共{{ totalcount(site) }}字</span>
-</div>
-

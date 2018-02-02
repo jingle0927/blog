@@ -6,101 +6,54 @@ tags: deepin
 
 主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。
 
+<!--more-->
 # 基本命令
 
 您可以通过以下命令来查看系统的信息，其他系统相关命令操作可自行搜索查询。
 
-查看系统版本	
-` cat /etc/deepin-version ` 
-
-查看内核版本	
-` uname -a ` 
-
-查看软件源信息	
-` cat /etc/apt/sources.list	`	
-
-查看命令帮助	
-` man chmod 或 chmod --help	`
+| desc    | command                       |
+| ------- | ----------------------------- |
+| 查看系统版本  | ` cat /etc/deepin-version `   |
+| 查看内核版本  | ` uname -a `                  |
+| 查看软件源信息 | ` cat /etc/apt/sources.list	` |
+| 查看命令帮助  | ` man chmod 或 chmod --help`   |
 
 ## Apt命令
 
 您可以通过以下命令来查看、安装、卸载、清理、升级等信息。
 
-更新包列表
-` sudo apt-get update `	
-
-安装/升级所有可用更新
-` sudo apt-get dist-upgrade `	
-
-安装应用程序更新	
-`  sudo apt-get upgrade	`
-
-dselect安装更新	
-`  sudo apt-get dselect-upgrade	`
-
-查找软件包	
-`  apt-cache search packagename `
-
-显示包相关信息
-`  apt-cache show package `	
-
-显示系统安装统计信息	
-`  apt-cache stats	`
-
-显示包的相关依赖	
-`  sudo apt-cache depends package	`
-
-安装软件	
-`  sudo apt-get install package	`
-
-重装软件	
-` sudo apt-get install package --reinstall	`
-
-强制安装软件	
-`  sudo apt-get -f install package	`
-
-卸载软件	
-` sudo apt-get remove package	`
-
-卸载软件及配置	
-`  sudo apt-get remove package --purge	`
-
-清理旧版本软件缓存
-`  sudo apt-get autoclean	`
-
-清理所有软件缓存
-`  sudo apt-get clean	`
-
-清理不再使用的孤立软件	
-`  sudo apt-get autoremove	`
-
-删除更新和升级的缓存软件
-` cd /var/cache/apt/archives `
-` sudo rm *.deb	`
+| desc         | command                                  |
+| ------------ | ---------------------------------------- |
+| 更新包列表        | ` sudo apt-get update `                  |
+| 安装/升级所有可用更新  | ` sudo apt-get dist-upgrade `            |
+| 安装应用程序更新     | `  sudo apt-get upgrade	`                |
+| dselect安装更新  | `  sudo apt-get dselect-upgrade	`        |
+| 查找软件包        | `  apt-cache search packagename `        |
+| 显示包相关信息      | `  apt-cache show package `              |
+| 显示系统安装统计信息   | `  apt-cache stats`                      |
+| 显示包的相关依赖     | `  sudo apt-cache depends package	`      |
+| 安装软件         | `  sudo apt-get install package	`        |
+| 重装软件         | ` sudo apt-get install package --reinstall	` |
+| 强制安装软件       | `  sudo apt-get -f install package	`     |
+| 卸载软件         | ` sudo apt-get remove package	`          |
+| 卸载软件及配置      | `  sudo apt-get remove package --purge	` |
+| 清理旧版本软件缓存    | `  sudo apt-get autoclean	`              |
+| 清理所有软件缓存     | `  sudo apt-get clean	`                  |
+| 清理不再使用的孤立软件  | `  sudo apt-get autoremove	`             |
+| 删除更新和升级的缓存软件 | ` cd /var/cache/apt/archives  & sudo rm *.deb` |
 
 ## Deb命令
 您可以通过以下命令来查看、安装、卸载、清理、升级等信息。
 
-查看软件包的详细情况，iU表示未安装成功，ii表示安装成功。	
-` sudo dpkg -l	`
-
-查询已安装的deb包的信息。
-` sudo dpkg -s	`	
-
-查看软件包的安装情况。	
-` sudo dpkg -L package | more `	
-
-查看软件属于哪个软件包。	
-` sudo dpkg -S	`
-
-安装deb包，部分存在depends关系，需要使用`sudo apt-get -f install`来解决。	
-` sudo dpkg -i	`
-
-卸载指定的deb包，不删除软件包的配置文件。
-` sudo dpkg -r	`	
-
-卸载deb包同时也删除配置文件，部分存在depends关系，需要使用`sudo apt-get remove`来解决。
-` sudo dpkg -P	`
+| desc                                     | command                   |
+| ---------------------------------------- | ------------------------- |
+| 查看软件包的详细情况。                              | ` sudo dpkg -l	`          |
+| 查询已安装的deb包的信息。                           | ` sudo dpkg -s	`          |
+| 查看软件包的安装情况。                              | ` sudo dpkg -L package  ` |
+| 查看软件属于哪个软件包。                             | ` sudo dpkg -S`           |
+| 安装deb包，部分存在depends关系，需要使用`sudo apt-get -f install`来解决。 | ` sudo dpkg -i`           |
+| 卸载指定的deb包，不删除软件包的配置文件。                   | ` sudo dpkg -r`           |
+| 卸载deb包同时也删除配置文件，部分存在depends关系，需要使用`sudo apt-get remove`来解决。 | ` sudo dpkg -P`           |
 
 ## Deepin命令
 
@@ -110,21 +63,21 @@ dselect安装更新
 
 在深度终端界面，输入` deepin-`，按下键盘上`Tab`键，自动显示深度应用系列的列表，部分应用可以直接在终端输入进行启动。
 
-![deepin-](../images/1.png)
+![deepin-](deepin-command/1.png)
 
 > 说明：在中文环境需要查看应用的英文界面时，可直接在终端中输入命令：` LANGUAGE="en_US" deepin-appstore `
 
 在深度终端界面，输入 `dde-`，按下键盘上`Tab`键，自动显示桌面环境的列表。
 
-![dde-](../images/2.png)
+![dde-](deepin-command/2.png)
 
-> 说明：在中文环境需要查看控制中心的英文界面时（如果不能生效，请先执行killall dde-control-center），再可直接在终端中输入命令：` export LANGUAGE="en_US";dde-control-center --show `
+> 说明：在中文环境需要查看控制中心的英文界面时（如果不能生效，请先执行`killall dde-control-center`），再可直接在终端中输入命令：` export LANGUAGE="en_US";dde-control-center --show `
 
 ### 应用帮助信息
 
 在深度终端界面，输入` deepin-appname -h` 将显示该应用的命令帮助。
 
-![dde-](../images/3.png)
+![deepin-](deepin-command/3.png)
 
 > 注意：部分深度系列软件不支持-h帮助命令。
 
@@ -132,13 +85,13 @@ dselect安装更新
 
 在深度终端界面，您可以直接通过命令匹配并安装应用（含apk/wine/webapps），只需要输入安装命令后再输入deepin./deepin-/dde-/apps.，按下键盘上`Tab`键，自动显示列表。
 
-![deepin-](../images/4.png)
+![deepin-](deepin-command/4.png)
 
-![dde-](../images/5.png)
+![dde-](deepin-command/5.png)
 
-![deepin.com](../images/6.png)
+![deepin.com](deepin-command/6.png)
 
-![apps.](../images/7.png)
+![apps.](deepin-command/7.png)
 
 ### 关机和重启
 

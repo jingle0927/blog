@@ -6,6 +6,7 @@
       <title><![CDATA[deepin-command]]></title>
       <url>/2018/02/01/deepin-command/</url>
       <content type="html"><![CDATA[<p>主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。</p>
+<a id="more"></a>
 <h1 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h1><p>您可以通过以下命令来查看系统的信息，其他系统相关命令操作可自行搜索查询。</p>
 <table>
 <thead>
@@ -108,7 +109,7 @@
 </tr>
 <tr>
 <td>删除更新和升级的缓存软件</td>
-<td><code>cd /var/cache/apt/archives `` sudo rm *.deb</code></td>
+<td><code>cd /var/cache/apt/archives  &amp; sudo rm *.deb</code></td>
 </tr>
 </tbody>
 </table>

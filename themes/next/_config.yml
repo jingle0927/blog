@@ -94,13 +94,13 @@ index_with_subtitle: false
 
 menu:
   home: / || apple
-  categories: /categories/ || android
+#categories: /categories/ || android
   tags: /tags/ || firefox
   archives: /archives/ || chrome
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   about: /about/ || linux
-  commonweal: /404.html || heartbeat
+  commonweal: /404.html || android
 
 
 # Enable/Disable menu icons.
@@ -109,12 +109,12 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: apple
   about: linux
-  categories: android
+#categories: android
   tags: firefox
   #schedule: 
   archives: chrome
   #sitemap: 
-  commonweal: heartbeat
+  commonweal: android
 
 # ---------------------------------------------------------------
 # Scheme Settings

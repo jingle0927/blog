@@ -5,11 +5,8 @@
     <entry>
       <title><![CDATA[如何在deepin安装command-not-found提示]]></title>
       <url>/2018/02/05/command-not-found/</url>
-      <content type="html"><![CDATA[<p>介绍在deepin下终端输入或安装包命令提示未找到命令，执行<code>apt-cache search xxxx</code>模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。</p>
-<a id="more"></a>
-<p>##</p>
-<p>安装command-not-found包</p>
-<p>可以从<a href="http://security.ubuntu.com/ubuntu/pool/main/c/command-not-found/" target="_blank" rel="noopener">https://www.ubuntuupdates.org/</a>下载最新包。</p>
+      <content type="html"><![CDATA[<p>介绍在deepin下终端输入或安装包命令提示未找到命令，执行<code>apt-cache search xxxx</code>模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。<br><a id="more"></a></p>
+<h2 id="安装command-not-found包"><a href="#安装command-not-found包" class="headerlink" title="安装command-not-found包"></a>安装command-not-found包</h2><p>可以从<a href="http://security.ubuntu.com/ubuntu/pool/main/c/command-not-found/" target="_blank" rel="noopener">https://www.ubuntuupdates.org/</a>下载最新包。</p>
 <ol>
 <li>下载command-not-found所需<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found_0.3ubuntu17.10.2_all.deb" target="_blank" rel="noopener">command-not-found</a>、<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found-data_0.3ubuntu17.10.2_amd64.deb" target="_blank" rel="noopener">command-not-found-data</a>、<a href="https://github.com/jingle0927/blog/releases/download/attachment/python3-commandnotfound_0.3ubuntu17.10.2_all.deb" target="_blank" rel="noopener">python3-commandnotfound</a>依赖包（deepin仓库的版本低）。</li>
 <li>执行<code>sudo dpkg -i *command-not-found*.deb</code>命令安装，或者使用深度软件包安装器批量安装。</li>

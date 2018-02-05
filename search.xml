@@ -3,6 +3,43 @@
   
     
     <entry>
+      <title><![CDATA[如何在deepin下安装Flatpak包]]></title>
+      <url>/2018/02/05/install-flatpak/</url>
+      <content type="html"><![CDATA[<p>介绍在deepin下安装其他桌面环境的Flatpak包，主要通过<a href="https://www.flathub.org/" target="_blank" rel="noopener">Flathub</a>下载文件，同时还可以去对应的应用官网下载，例如：<a href="https://zh-cn.libreoffice.org/download/flatpak/" target="_blank" rel="noopener">Libreoffice</a>。</p>
+<a id="more"></a>
+<blockquote>
+<p>在线安装或直接文件安装如果没有runtime运行环境，会自动提示安装runtime环境。</p>
+</blockquote>
+<h2 id="链接地址安装"><a href="#链接地址安装" class="headerlink" title="链接地址安装"></a>链接地址安装</h2><p>以 <a href="https://github.com/openpaperwork/paperwork" target="_blank" rel="noopener">https://github.com/openpaperwork/paperwork</a> 项目为例。</p>
+<ol>
+<li>获取Flatpak包地址并执行如下命令。<br><code>flatpak --user install https://builder.openpaper.work/paperwork_master.flatpakref</code></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Installing: work.openpaper.Paperwork/x86_64/master</span><br><span class="line">Required runtime for work.openpaper.Paperwork/x86_64/master (org.gnome.Platform/x86_64/3.26) is not installed, searching...</span><br><span class="line">Found in remote gnome, do you want to install it? [y/n]: y</span><br><span class="line">Installing: org.gnome.Platform/x86_64/3.26 from gnome</span><br><span class="line">[################=   ] Downloading: 174.9 MB/213.0 MB (169.3 kB/s)</span><br></pre></td></tr></table></figure>
+<ol>
+<li>完成上面的提示安装后，执行<code>flatpak run work.openpaper.Paperwork</code>命令。</li>
+<li>如果需要卸载，执行<code>flatpak --user uninstall work.openpaper.Paperwork</code> 命令。</li>
+</ol>
+<h2 id="本地文件安装"><a href="#本地文件安装" class="headerlink" title="本地文件安装"></a>本地文件安装</h2><ol>
+<li>下载 <a href="https://flathub.org/repo/appstream/org.libreoffice.LibreOffice.flatpakref" target="_blank" rel="noopener">https://flathub.org/repo/appstream/org.libreoffice.LibreOffice.flatpakref</a> 文件。</li>
+<li>在文件下载目录执行 <code>flatpak install --user --bundle LibreOffice.flatpak</code> 命令。</li>
+<li>然后运行<code>flatpak run org.libreoffice.LibreOffice</code>命令。</li>
+<li>如果需要升级，执行<code>flatpak update --user org.libreoffice.LibreOffice</code>命令。</li>
+</ol>
+<blockquote>
+<p> deepin下已经开始对深度商店上架的deb进行Flatpak替换，保证将来系统和应用更新升级的分离。</p>
+</blockquote>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> flatpak </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[deepin-command]]></title>
       <url>/2018/02/01/deepin-command/</url>
       <content type="html"><![CDATA[<p>主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。</p>

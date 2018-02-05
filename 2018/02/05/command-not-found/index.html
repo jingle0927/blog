@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="格格巫的小屋">
 <meta property="og:description" content="介绍在deepin下终端输入或安装包命令提示未找到命令，执行apt-cache search xxxx模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-05T09:30:10.055Z">
+<meta property="og:updated_time" content="2018-02-05T09:35:27.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在deepin安装command-not-found提示">
 <meta name="twitter:description" content="介绍在deepin下终端输入或安装包命令提示未找到命令，执行apt-cache search xxxx模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。">
@@ -382,9 +382,9 @@
         <p>介绍在deepin下终端输入或安装包命令提示未找到命令，执行<code>apt-cache search xxxx</code>模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。<br><a id="more"></a></p>
 <h2 id="安装command-not-found包"><a href="#安装command-not-found包" class="headerlink" title="安装command-not-found包"></a>安装command-not-found包</h2><p>可以从<a href="http://security.ubuntu.com/ubuntu/pool/main/c/command-not-found/" target="_blank" rel="noopener">https://www.ubuntuupdates.org/</a>下载最新包。</p>
 <ol>
-<li>下载command-not-found所需<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found_0.3ubuntu17.10.2_all.deb" target="_blank" rel="noopener">command-not-found</a>、<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found-data_0.3ubuntu17.10.2_amd64.deb" target="_blank" rel="noopener">command-not-found-data</a>、<a href="https://github.com/jingle0927/blog/releases/download/attachment/python3-commandnotfound_0.3ubuntu17.10.2_all.deb" target="_blank" rel="noopener">python3-commandnotfound</a>依赖包（deepin仓库的版本低）。</li>
+<li>直接下载command-not-found所需<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found_0.3ubuntu17.10.2_all.deb" target="_blank" rel="noopener">command-not-found</a>、<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found-data_0.3ubuntu17.10.2_amd64.deb" target="_blank" rel="noopener">command-not-found-data</a>、<a href="https://github.com/jingle0927/blog/releases/download/attachment/python3-commandnotfound_0.3ubuntu17.10.2_all.deb" target="_blank" rel="noopener">python3-commandnotfound</a>依赖包（deepin仓库的版本低）。</li>
 <li>执行<code>sudo dpkg -i *command-not-found*.deb</code>命令安装，或者使用深度软件包安装器批量安装。</li>
-<li>然后下载<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found.mo" target="_blank" rel="noopener">command-not-found.mo</a>配置文件，拷贝到<code>/usr/share/locale/zh_CN/LC_MESSAGES</code> 目录下(中文提示)。</li>
+<li>下载<a href="https://github.com/jingle0927/blog/releases/download/attachment/command-not-found.mo" target="_blank" rel="noopener">command-not-found.mo</a>配置文件，拷贝到<code>/usr/share/locale/zh_CN/LC_MESSAGES</code> 目录下(中文提示)。</li>
 <li>安装配置成功后，执行<code>sudo update-command-not-found</code>命令更新。</li>
 </ol>
 <h2 id="查看command-not-found提示"><a href="#查看command-not-found提示" class="headerlink" title="查看command-not-found提示"></a>查看command-not-found提示</h2><p>在终端执行任意命令，提示如下。</p>

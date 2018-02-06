@@ -3,14 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[test]]></title>
-      <url>/2018/02/06/undefined-test/</url>
-      <content type="html"></content>
-      
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[如何在deepin安装command-not-found提示]]></title>
       <url>/2018/02/05/command-not-found/</url>
       <content type="html"><![CDATA[<p>介绍在deepin下终端输入或安装包命令提示未找到命令，执行<code>apt-cache search xxxx</code>模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。<br><a id="more"></a></p>

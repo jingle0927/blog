@@ -3,6 +3,39 @@
   
     
     <entry>
+      <title><![CDATA[在deepin下使用Appifier构建Webapp应用]]></title>
+      <url>/2018/02/11/appifier-build-webapp/</url>
+      <content type="html"><![CDATA[<p>介绍deepin下如何打包webapp应用，通过图形化appifier打包安装包，自动生成web源文件，然后通过electron-installer-debian打包成deb包格式。</p>
+<blockquote>
+<p>当然，还可以打包成<a href="https://github.com/endlessm/electron-installer-flatpak" target="_blank" rel="noopener">flatpak</a>格式。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="安装appifier包"><a href="#安装appifier包" class="headerlink" title="安装appifier包"></a>安装appifier包</h2><ol>
+<li>从<a href="https://github.com/quanglam2807/appifier/releases" target="_blank" rel="noopener">Appifier github</a>下载deb安装包。</li>
+<li><code>sudo dpkg -i Appifier_x.x.x_amd64.deb</code></li>
+</ol>
+<h2 id="安装npm包"><a href="#安装npm包" class="headerlink" title="安装npm包"></a>安装npm包</h2><ol>
+<li>安装npm    <code>sudo apt-get install npm</code></li>
+<li>安装electron  <code>npm install electron --save-dev --save-exact</code></li>
+</ol>
+<h2 id="安装electron-installer-debian包"><a href="#安装electron-installer-debian包" class="headerlink" title="安装electron-installer-debian包"></a>安装electron-installer-debian包</h2><p><code>npm install -g electron-installer-debian</code></p>
+<h2 id="安装fakeroot依赖包"><a href="#安装fakeroot依赖包" class="headerlink" title="安装fakeroot依赖包"></a>安装fakeroot依赖包</h2><p><code>sudo apt-get install fakeroot</code></p>
+<h2 id="打包wechat"><a href="#打包wechat" class="headerlink" title="打包wechat"></a>打包wechat</h2><p><code>electron-installer-debian --src /home/jingle/Desktop/Wechat-linux-x64/ --dest /home/jingle/Desktop/wechat/ --arch amd64</code></p>
+<blockquote>
+<p>注意：<code>/home/jingle/Desktop/Wechat-linux-x64/</code> 目录属于appifier生成目录，生成的时候需要解压deb包<code>dpkg-deb -R xxx.deb dir</code> 修改<code>Exec=/usr/lib/wechat/wechat</code>（不然启动器没有desktop文件），然后再压缩包<code>fakeroot dpkg -b dir xxx.deb</code>。</p>
+</blockquote>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> deepin </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[如何在deepin安装command-not-found提示]]></title>
       <url>/2018/02/05/command-not-found/</url>
       <content type="html"><![CDATA[<p>介绍在deepin下终端输入或安装包命令提示未找到命令，执行<code>apt-cache search xxxx</code>模糊搜索显示太多包名，不能精确定位到包名，通过安装command-not-found包来进行包名安装详细提示。<br><a id="more"></a></p>

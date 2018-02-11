@@ -85,27 +85,18 @@
 
 
 
-<meta name="description" content="主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。">
+<meta name="description" content="介绍deepin下如何打包webapp应用，通过图形化appifier打包安装包，自动生成web源文件，然后通过electron-installer-debian打包成deb包格式。  当然，还可以打包成flatpak格式。">
 <meta name="keywords" content="deepin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="deepin-command">
-<meta property="og:url" content="http://ijingle.cc/2018/02/01/deepin-command/index.html">
+<meta property="og:title" content="在deepin下使用Appifier构建Webapp应用">
+<meta property="og:url" content="http://ijingle.cc/2018/02/11/appifier-build-webapp/index.html">
 <meta property="og:site_name" content="格格巫的小屋">
-<meta property="og:description" content="主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。">
+<meta property="og:description" content="介绍deepin下如何打包webapp应用，通过图形化appifier打包安装包，自动生成web源文件，然后通过electron-installer-debian打包成deb包格式。  当然，还可以打包成flatpak格式。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/1.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/2.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/3.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/4.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/5.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/6.png">
-<meta property="og:image" content="http://ijingle.cc/2018/02/01/deepin-command/7.png">
-<meta property="og:image" content="https://github.com/haloislet/linux-command/raw/master/mac-screenshot.png">
-<meta property="og:updated_time" content="2018-02-02T02:48:16.869Z">
+<meta property="og:updated_time" content="2018-02-11T09:27:49.950Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="deepin-command">
-<meta name="twitter:description" content="主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。">
-<meta name="twitter:image" content="http://ijingle.cc/2018/02/01/deepin-command/1.png">
+<meta name="twitter:title" content="在deepin下使用Appifier构建Webapp应用">
+<meta name="twitter:description" content="介绍deepin下如何打包webapp应用，通过图形化appifier打包安装包，自动生成web源文件，然后通过electron-installer-debian打包成deb包格式。  当然，还可以打包成flatpak格式。">
 
 
 
@@ -135,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://ijingle.cc/2018/02/01/deepin-command/"/>
+  <link rel="canonical" href="http://ijingle.cc/2018/02/11/appifier-build-webapp/"/>
 
 
 
 
 
-  <title>deepin-command | 格格巫的小屋</title>
+  <title>在deepin下使用Appifier构建Webapp应用 | 格格巫的小屋</title>
   
 
 
@@ -280,7 +271,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ijingle.cc/2018/02/01/deepin-command/">
+    <link itemprop="mainEntityOfPage" href="http://ijingle.cc/2018/02/11/appifier-build-webapp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jingle">
@@ -297,7 +288,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">deepin-command</h1>
+          <h1 class="post-title" itemprop="name headline">在deepin下使用Appifier构建Webapp应用</h1>
         
 
         <div class="post-meta">
@@ -309,8 +300,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-01T16:23:02+08:00">
-                2018-02-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T17:11:31+08:00">
+                2018-02-11
               </time>
             
 
@@ -341,7 +332,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  945
+                  203
                 </span>
               
 
@@ -357,7 +348,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  1
                 </span>
               
             </div>
@@ -378,184 +369,25 @@
       
 
       
-        <p>主要介绍了深度操作系统中常用命令、系统命令、通用命令等，您可以通过终端来输入命令来完成相关操作。</p>
+        <p>介绍deepin下如何打包webapp应用，通过图形化appifier打包安装包，自动生成web源文件，然后通过electron-installer-debian打包成deb包格式。</p>
+<blockquote>
+<p>当然，还可以打包成<a href="https://github.com/endlessm/electron-installer-flatpak" target="_blank" rel="noopener">flatpak</a>格式。</p>
+</blockquote>
 <a id="more"></a>
-<h1 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h1><p>您可以通过以下命令来查看系统的信息，其他系统相关命令操作可自行搜索查询。</p>
-<table>
-<thead>
-<tr>
-<th>desc</th>
-<th>command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>查看系统版本</td>
-<td><code>cat /etc/deepin-version</code></td>
-</tr>
-<tr>
-<td>查看内核版本</td>
-<td><code>uname -a</code></td>
-</tr>
-<tr>
-<td>查看软件源信息</td>
-<td><code>cat /etc/apt/sources.list</code></td>
-</tr>
-<tr>
-<td>查看命令帮助</td>
-<td><code>man chmod 或 chmod --help</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="Apt命令"><a href="#Apt命令" class="headerlink" title="Apt命令"></a>Apt命令</h2><p>您可以通过以下命令来查看、安装、卸载、清理、升级等信息。</p>
-<table>
-<thead>
-<tr>
-<th>desc</th>
-<th>command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>更新包列表</td>
-<td><code>sudo apt-get update</code></td>
-</tr>
-<tr>
-<td>安装/升级所有可用更新</td>
-<td><code>sudo apt-get dist-upgrade</code></td>
-</tr>
-<tr>
-<td>安装应用程序更新</td>
-<td><code>sudo apt-get upgrade</code></td>
-</tr>
-<tr>
-<td>dselect安装更新</td>
-<td><code>sudo apt-get dselect-upgrade</code></td>
-</tr>
-<tr>
-<td>查找软件包</td>
-<td><code>apt-cache search packagename</code></td>
-</tr>
-<tr>
-<td>显示包相关信息</td>
-<td><code>apt-cache show package</code></td>
-</tr>
-<tr>
-<td>显示系统安装统计信息</td>
-<td><code>apt-cache stats</code></td>
-</tr>
-<tr>
-<td>显示包的相关依赖</td>
-<td><code>sudo apt-cache depends package</code></td>
-</tr>
-<tr>
-<td>安装软件</td>
-<td><code>sudo apt-get install package</code></td>
-</tr>
-<tr>
-<td>重装软件</td>
-<td><code>sudo apt-get install package --reinstall</code></td>
-</tr>
-<tr>
-<td>强制安装软件</td>
-<td><code>sudo apt-get -f install package</code></td>
-</tr>
-<tr>
-<td>卸载软件</td>
-<td><code>sudo apt-get remove package</code></td>
-</tr>
-<tr>
-<td>卸载软件及配置</td>
-<td><code>sudo apt-get remove package --purge</code></td>
-</tr>
-<tr>
-<td>清理旧版本软件缓存</td>
-<td><code>sudo apt-get autoclean</code></td>
-</tr>
-<tr>
-<td>清理所有软件缓存</td>
-<td><code>sudo apt-get clean</code></td>
-</tr>
-<tr>
-<td>清理不再使用的孤立软件</td>
-<td><code>sudo apt-get autoremove</code></td>
-</tr>
-<tr>
-<td>删除更新和升级的缓存软件</td>
-<td><code>cd /var/cache/apt/archives  &amp; sudo rm *.deb</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="Deb命令"><a href="#Deb命令" class="headerlink" title="Deb命令"></a>Deb命令</h2><p>您可以通过以下命令来查看、安装、卸载、清理、升级等信息。</p>
-<table>
-<thead>
-<tr>
-<th>desc</th>
-<th>command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>查看软件包的详细情况。</td>
-<td><code>sudo dpkg -l</code></td>
-</tr>
-<tr>
-<td>查询已安装的deb包的信息。</td>
-<td><code>sudo dpkg -s</code></td>
-</tr>
-<tr>
-<td>查看软件包的安装情况。</td>
-<td><code>sudo dpkg -L package</code></td>
-</tr>
-<tr>
-<td>查看软件属于哪个软件包。</td>
-<td><code>sudo dpkg -S</code></td>
-</tr>
-<tr>
-<td>安装deb包，部分存在depends关系，需要使用<code>sudo apt-get -f install</code>来解决。</td>
-<td><code>sudo dpkg -i</code></td>
-</tr>
-<tr>
-<td>卸载指定的deb包，不删除软件包的配置文件。</td>
-<td><code>sudo dpkg -r</code></td>
-</tr>
-<tr>
-<td>卸载deb包同时也删除配置文件，部分存在depends关系，需要使用<code>sudo apt-get remove</code>来解决。</td>
-<td><code>sudo dpkg -P</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="Deepin命令"><a href="#Deepin命令" class="headerlink" title="Deepin命令"></a>Deepin命令</h2><p>您可以通过Deepin自定义命令来进行相关操作。</p>
-<h3 id="启动应用命令"><a href="#启动应用命令" class="headerlink" title="启动应用命令"></a>启动应用命令</h3><p>在深度终端界面，输入<code>deepin-</code>，按下键盘上<code>Tab</code>键，自动显示深度应用系列的列表，部分应用可以直接在终端输入进行启动。</p>
-<p><img src="/2018/02/01/deepin-command/1.png" alt="deepin-"></p>
+<h2 id="安装appifier包"><a href="#安装appifier包" class="headerlink" title="安装appifier包"></a>安装appifier包</h2><ol>
+<li>从<a href="https://github.com/quanglam2807/appifier/releases" target="_blank" rel="noopener">Appifier github</a>下载deb安装包。</li>
+<li><code>sudo dpkg -i Appifier_x.x.x_amd64.deb</code></li>
+</ol>
+<h2 id="安装npm包"><a href="#安装npm包" class="headerlink" title="安装npm包"></a>安装npm包</h2><ol>
+<li>安装npm    <code>sudo apt-get install npm</code></li>
+<li>安装electron  <code>npm install electron --save-dev --save-exact</code></li>
+</ol>
+<h2 id="安装electron-installer-debian包"><a href="#安装electron-installer-debian包" class="headerlink" title="安装electron-installer-debian包"></a>安装electron-installer-debian包</h2><p><code>npm install -g electron-installer-debian</code></p>
+<h2 id="安装fakeroot依赖包"><a href="#安装fakeroot依赖包" class="headerlink" title="安装fakeroot依赖包"></a>安装fakeroot依赖包</h2><p><code>sudo apt-get install fakeroot</code></p>
+<h2 id="打包wechat"><a href="#打包wechat" class="headerlink" title="打包wechat"></a>打包wechat</h2><p><code>electron-installer-debian --src /home/jingle/Desktop/Wechat-linux-x64/ --dest /home/jingle/Desktop/wechat/ --arch amd64</code></p>
 <blockquote>
-<p>说明：在中文环境需要查看应用的英文界面时，可直接在终端中输入命令：<code>LANGUAGE=&quot;en_US&quot; deepin-appstore</code></p>
+<p>注意：<code>/home/jingle/Desktop/Wechat-linux-x64/</code> 目录属于appifier生成目录，生成的时候需要解压deb包<code>dpkg-deb -R xxx.deb dir</code> 修改<code>Exec=/usr/lib/wechat/wechat</code>（不然启动器没有desktop文件），然后再压缩包<code>fakeroot dpkg -b dir xxx.deb</code>。</p>
 </blockquote>
-<p>在深度终端界面，输入 <code>dde-</code>，按下键盘上<code>Tab</code>键，自动显示桌面环境的列表。</p>
-<p><img src="/2018/02/01/deepin-command/2.png" alt="dde-"></p>
-<blockquote>
-<p>说明：在中文环境需要查看控制中心的英文界面时（如果不能生效，请先执行<code>killall dde-control-center</code>），再可直接在终端中输入命令：<code>export LANGUAGE=&quot;en_US&quot;;dde-control-center --show</code></p>
-</blockquote>
-<h3 id="应用帮助信息"><a href="#应用帮助信息" class="headerlink" title="应用帮助信息"></a>应用帮助信息</h3><p>在深度终端界面，输入<code>deepin-appname -h</code> 将显示该应用的命令帮助。</p>
-<p><img src="/2018/02/01/deepin-command/3.png" alt="deepin-"></p>
-<blockquote>
-<p>注意：部分深度系列软件不支持-h帮助命令。</p>
-</blockquote>
-<h3 id="安装deepin应用"><a href="#安装deepin应用" class="headerlink" title="安装deepin应用"></a>安装deepin应用</h3><p>在深度终端界面，您可以直接通过命令匹配并安装应用（含apk/wine/webapps），只需要输入安装命令后再输入deepin./deepin-/dde-/apps.，按下键盘上<code>Tab</code>键，自动显示列表。</p>
-<p><img src="/2018/02/01/deepin-command/4.png" alt="deepin-"></p>
-<p><img src="/2018/02/01/deepin-command/5.png" alt="dde-"></p>
-<p><img src="/2018/02/01/deepin-command/6.png" alt="deepin.com"></p>
-<p><img src="/2018/02/01/deepin-command/7.png" alt="apps."></p>
-<h3 id="关机和重启"><a href="#关机和重启" class="headerlink" title="关机和重启"></a>关机和重启</h3><ul>
-<li>在深度终端界面，还可以直接输入 <code>sudo init 0</code>进行关机。</li>
-<li>在深度终端界面，还可以直接输入<code>sudo reboot</code>进行重启。</li>
-</ul>
-<h3 id="命令模式和桌面模式"><a href="#命令模式和桌面模式" class="headerlink" title="命令模式和桌面模式"></a>命令模式和桌面模式</h3><ul>
-<li>在深度桌面环境中，按下键盘上的 <code>Ctrl + Alt + F2/F3/F4/F5/F6</code> 组合键，进入命令模式。</li>
-<li>在深度桌面环境中，按下键盘上的<code>Ctrl + Alt + F1</code> 组合键，从tty模式恢复桌面模式。</li>
-</ul>
-<h2 id="通用命令"><a href="#通用命令" class="headerlink" title="通用命令"></a>通用命令</h2><p>访问github上面的<a href="https://github.com/haloislet/linux-command/releases/tag/v2.0.0" target="_blank" rel="noopener">linux-command</a>项目，下载appimage安装包，安装成后在启动器界面会有desktop文件，双击运行即可。</p>
-<p><img src="https://github.com/haloislet/linux-command/raw/master/mac-screenshot.png" alt="linux-command"></p>
 
       
     </div>
@@ -599,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/01/hello-world/" rel="next" title="Hello deepin">
-                <i class="fa fa-chevron-left"></i> Hello deepin
+              <a href="/2018/02/05/command-not-found/" rel="next" title="如何在deepin安装command-not-found提示">
+                <i class="fa fa-chevron-left"></i> 如何在deepin安装command-not-found提示
               </a>
             
           </div>
@@ -608,10 +440,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/05/install-flatpak/" rel="prev" title="如何在deepin下安装Flatpak包">
-                如何在deepin下安装Flatpak包 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -778,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本命令"><span class="nav-number">1.</span> <span class="nav-text">基本命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Apt命令"><span class="nav-number">1.1.</span> <span class="nav-text">Apt命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deb命令"><span class="nav-number">1.2.</span> <span class="nav-text">Deb命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deepin命令"><span class="nav-number">1.3.</span> <span class="nav-text">Deepin命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动应用命令"><span class="nav-number">1.3.1.</span> <span class="nav-text">启动应用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用帮助信息"><span class="nav-number">1.3.2.</span> <span class="nav-text">应用帮助信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装deepin应用"><span class="nav-number">1.3.3.</span> <span class="nav-text">安装deepin应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关机和重启"><span class="nav-number">1.3.4.</span> <span class="nav-text">关机和重启</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令模式和桌面模式"><span class="nav-number">1.3.5.</span> <span class="nav-text">命令模式和桌面模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通用命令"><span class="nav-number">1.4.</span> <span class="nav-text">通用命令</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装appifier包"><span class="nav-number">1.</span> <span class="nav-text">安装appifier包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装npm包"><span class="nav-number">2.</span> <span class="nav-text">安装npm包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装electron-installer-debian包"><span class="nav-number">3.</span> <span class="nav-text">安装electron-installer-debian包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装fakeroot依赖包"><span class="nav-number">4.</span> <span class="nav-text">安装fakeroot依赖包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包wechat"><span class="nav-number">5.</span> <span class="nav-text">打包wechat</span></a></li></ol></div>
             
 
           </div>

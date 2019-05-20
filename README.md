@@ -1,2 +1,1 @@
-# blog
-http://ijingle.cc
+

@@ -13,7 +13,7 @@ tags: deepin
 
 | desc    | command                       |
 | ------- | ----------------------------- |
-| 查看系统版本  | ` cat /etc/deepin-version `   |
+| 查看系统版本  | ` cat /etc/os-version `   |
 | 查看内核版本  | ` uname -a `                  |
 | 查看软件源信息 | ` cat /etc/apt/sources.list	` |
 | 查看命令帮助  | ` man chmod 或 chmod --help`   |
